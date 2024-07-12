@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Faded")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39dcf3d134bbee26bf0f287e2b4a7ab7db1cf197")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a3d23681f4cefcfd0998245a71bd9b9519f836")]
 [assembly: System.Reflection.AssemblyProductAttribute("Faded")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Faded")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

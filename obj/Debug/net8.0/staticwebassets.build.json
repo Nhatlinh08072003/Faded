@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JZPUdpU87WSvQWCE2cQFjdeWKTFFI8eyzjMv/Bw+SD4=",
+  "Hash": "O1D7nMy8My07j8fbcaQAcAVbK3ZUrmvXoEMZbpafRBQ=",
   "Source": "Faded",
   "BasePath": "_content/Faded",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Faded\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Faded.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Faded\\wwwroot\\css\\header.css",
+      "SourceId": "Faded",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Faded\\wwwroot\\",
+      "BasePath": "_content/Faded",
+      "RelativePath": "css/header.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\header.css"
     },
     {
       "Identity": "D:\\Faded\\wwwroot\\css\\input.css",
