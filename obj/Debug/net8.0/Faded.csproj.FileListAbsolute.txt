@@ -1,12 +1,12 @@
-D:\Faded\bin\Debug\net8.0\Faded.exe
-D:\Faded\bin\Debug\net8.0\Faded.dll
 D:\Faded\bin\Debug\net8.0\appsettings.Development.json
 D:\Faded\bin\Debug\net8.0\appsettings.json
 D:\Faded\bin\Debug\net8.0\package-lock.json
 D:\Faded\bin\Debug\net8.0\package.json
 D:\Faded\bin\Debug\net8.0\Faded.staticwebassets.runtime.json
+D:\Faded\bin\Debug\net8.0\Faded.exe
 D:\Faded\bin\Debug\net8.0\Faded.deps.json
 D:\Faded\bin\Debug\net8.0\Faded.runtimeconfig.json
+D:\Faded\bin\Debug\net8.0\Faded.dll
 D:\Faded\bin\Debug\net8.0\Faded.pdb
 D:\Faded\obj\Debug\net8.0\Faded.GeneratedMSBuildEditorConfig.editorconfig
 D:\Faded\obj\Debug\net8.0\Faded.AssemblyInfoInputs.cache

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Faded.bundle.scp.css"
     },
     {
+      "Id": "D:\\Faded\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
       "Id": "D:\\Faded\\wwwroot\\css\\input.css",
       "PackagePath": "staticwebassets\\css\\input.css"
     },
