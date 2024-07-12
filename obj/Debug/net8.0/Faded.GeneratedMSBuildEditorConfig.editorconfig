@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Faded
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Faded/Partials/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFydGlhbHNcRm9vdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Faded/Partials/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFydGlhbHNcSGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Faded/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
