@@ -19,5 +19,29 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.MapControllerRoute(
+    name: "Vintageteeshop",
+    pattern: "/vintageteeshop",
+    defaults: new { controller = "Home", action = "Vintageteeshop" }
+);
+app.MapControllerRoute(
+    name: "Reword",
+    pattern: "/reword",
+    defaults: new { controller = "Home", action = "Reword" }
+);
+app.MapControllerRoute(
+    name: "Information",
+    pattern: "/information",
+    defaults: new { controller = "Home", action = "Information" }
+);
+app.MapControllerRoute(
+    name: "Contact",
+    pattern: "/contact",
+    defaults: new { controller = "Home", action = "Contact" }
+);
+app.MapControllerRoute(
+    name: "Cart",
+    pattern: "/cart",
+    defaults: new { controller = "Home", action = "Cart" }
+);
 app.Run();

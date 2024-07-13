@@ -17,12 +17,26 @@ public class HomeController : Controller
     {
         return View();
     }
-
-    public IActionResult Privacy()
+    public IActionResult Vintageteeshop()
     {
         return View();
     }
-
+    public IActionResult Reword()
+    {
+        return View();
+    }
+    public IActionResult Information()
+    {
+        return View();
+    }
+    public IActionResult Contact()
+    {
+        return View();
+    }
+    public IActionResult Cart()
+    {
+        return View();
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
