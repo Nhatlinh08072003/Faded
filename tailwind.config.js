@@ -81,7 +81,7 @@ module.exports = {
         'scale-wiggle': 'scale-wiggle 0.8s ease-in-out infinite 0.2s',
       },
       screens: {
-        sm: '640px',
+        sm: '350px',
 
         md: '768px',
 
