@@ -1,11 +1,11 @@
-﻿@* @{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <head>
 
 </head>
-
 
 <div class="relative w-full">
     <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03-17-46-18.jpg?v=1617811192" alt=""
@@ -25,27 +25,73 @@
             Reword
         </h1>
     </div>
-</div>
 
+    <!-- Previous and Next buttons -->
+    <div class="absolute top-1/2 left-0 transform -translate-y-1/2 ml-4">
+        <button id="prevBtn" class="bg-gray-800 text-white p-2 rounded-full focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+    </div>
+    <div class="absolute top-1/2 right-0 transform -translate-y-1/2 mr-4">
+        <button id="nextBtn" class="bg-gray-800 text-white p-2 rounded-full focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+</div>
 
 <script>
     let currentIndex = 0;
     const images = [document.getElementById('image1'), document.getElementById('image2'), document.getElementById('image3')];
     const titles = [document.getElementById('title1'), document.getElementById('title2')];
+    let intervalId;
 
-    function showNextImage() {
+    function showImage(index) {
         images[currentIndex].classList.add('hidden');
-        titles[currentIndex].classList.add('opacity-0');
+        titles[currentIndex % titles.length].classList.add('opacity-0');
+        titles[currentIndex % titles.length].classList.add('hidden');
 
-        currentIndex = (currentIndex + 1) % images.length;
+        currentIndex = index;
 
         images[currentIndex].classList.remove('hidden');
-        titles[currentIndex].classList.remove('opacity-0');
-
-        setTimeout(showNextImage, 3000); // Change every 3 seconds
+        titles[currentIndex % titles.length].classList.remove('opacity-0');
+        titles[currentIndex % titles.length].classList.remove('hidden');
     }
 
-    setTimeout(showNextImage, 1000);
+    function showNextImage() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        showImage(nextIndex);
+    }
+
+    function showPrevImage() {
+        const prevIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(prevIndex);
+    }
+
+    function startSlideshow() {
+        intervalId = setInterval(showNextImage, 3000); // Change every 3 seconds
+    }
+
+    function stopSlideshow() {
+        clearInterval(intervalId);
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        stopSlideshow();
+        showNextImage();
+        startSlideshow();
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        stopSlideshow();
+        showPrevImage();
+        startSlideshow();
+    });
+
+    startSlideshow();
 
     // Header menu toggle functionality
     const menuToggle1 = document.getElementById('menu-toggle-1');
@@ -55,4 +101,4 @@
         mobileMenu1.classList.toggle('hidden');
     });
 
-</script> *@
+</script>
