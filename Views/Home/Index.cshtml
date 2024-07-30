@@ -1,104 +1,153 @@
-﻿
-@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@{ ViewData["Title"] = "Home Page"; }
 
-<head>
-
-</head>
+<head> </head>
 
 <div class="relative w-full">
-    <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03-17-46-18.jpg?v=1617811192" alt=""
-        class="object-cover h-screen w-full transition-opacity duration-1000" id="image1">
-    <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03_16_38_40.jpg?v=1617583520" alt=""
-        class="hidden object-cover h-screen w-full transition-opacity duration-1000" id="image2">
-    <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03-17-46-16.jpg?v=1617811228" alt=""
-        class="hidden object-cover h-screen w-full transition-opacity duration-1000" id="image3">
+  <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03-17-46-18.jpg?v=1617811192" alt="" class="w-full object-cover transition-opacity duration-1000" style="height: 500px;" id="image1" />
+  <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03_16_38_40.jpg?v=1617583520" alt="" class="hidden w-full object-cover transition-opacity duration-1000" style="height: 500px;" id="image2" />
+  <img src="https://www.electricland-tokyo.com/cdn/shop/files/2021-03-03-17-46-16.jpg?v=1617811228" alt="" class="hidden w-full object-cover transition-opacity duration-1000" style="height: 500px;" id="image3" />
 
-    <div class="absolute inset-0 flex items-center justify-center">
-        <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold p-4 rounded transition-opacity duration-1000 opacity-100 shadow-lg"
-            id="title1" style="font-family: 'jsMath-cmbx10';">
-            Vintage Tee Shop
-        </h1>
-        <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold p-4 rounded transition-opacity duration-1000 opacity-0 hidden shadow-lg"
-            id="title2" style="font-family: 'jsMath-cmbx10';">
-            Reword
-        </h1>
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h1 class="rounded p-4 text-5xl font-bold text-white opacity-100 shadow-lg transition-opacity duration-1000 md:text-6xl lg:text-7xl" id="title1" style="font-family: 'jsMath-cmbx10';">Vintage</h1>
+    <h1 class="hidden rounded p-4 text-5xl font-bold text-white opacity-0 shadow-lg transition-opacity duration-1000 md:text-6xl lg:text-7xl" id="title2" style="font-family: 'jsMath-cmbx10';">Jerseyzone</h1>
+    @*
+    <h1 class="hidden rounded p-4 text-5xl font-bold text-white opacity-0 shadow-lg transition-opacity duration-1000 md:text-6xl lg:text-7xl" id="title1" style="font-family: 'jsMath-cmbx10';">FOOTWEAR</h1>
+    *@ @*
+    <h1 class="hidden rounded p-4 text-5xl font-bold text-white opacity-0 shadow-lg transition-opacity duration-1000 md:text-6xl lg:text-7xl" id="title2" style="font-family: 'jsMath-cmbx10';">CLEARANCE SALE</h1>
+    *@
+  </div>
+  <!-- Previous and Next buttons -->
+  <div class="absolute left-0 top-1/2 ml-4 -translate-y-1/2 transform">
+    <button id="prevBtn" class="rounded-full bg-gray-800 p-2 text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+  </div>
+  <div class="absolute right-0 top-1/2 mr-4 -translate-y-1/2 transform">
+    <button id="nextBtn" class="rounded-full bg-gray-800 p-2 text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+<div class="p-6">
+  <div class="mb-4 flex justify-between">
+    <div class="text-xl font-bold">VINTAGE</div>
+    <div class="cursor-pointer text-base text-gray-500">Xem tất cả</div>
+  </div>
+  <div class="flex space-x-4">
+    <div class="flex w-1/4 flex-col items-center">
+      <img class="w-full" src="https://glab.vn/storage/products/2024/06/21/480x320/667501fb31a25.jpg" alt="" />
+      <div class="mt-2 text-center">
+        <p class="text-sm font-semibold">VINTAGE 90S ANVIL LAKERS<br />MAGIC JOHNSON BIG FACE</p>
+        <p class="p-1">3,850,000đ</p>
+      </div>
     </div>
-
-    <!-- Previous and Next buttons -->
-    <div class="absolute top-1/2 left-0 transform -translate-y-1/2 ml-4">
-        <button id="prevBtn" class="bg-gray-800 text-white p-2 rounded-full focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-        </button>
+    <div class="flex w-1/4 flex-col items-center">
+      <img class="w-full" src="https://glab.vn/storage/products/2024/06/21/480x320/66750191a8612.jpg" alt="" />
+      <div class="mt-2 text-center">
+        <p class="text-sm font-semibold">VINATGE 90S APPLE MAC<br>
+ BACK</p>
+        <p class="p-1"> 3,520,000đ</p>
+      </div>
     </div>
-    <div class="absolute top-1/2 right-0 transform -translate-y-1/2 mr-4">
-        <button id="nextBtn" class="bg-gray-800 text-white p-2 rounded-full focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-        </button>
+    <div class="flex w-1/4 flex-col items-center">
+      <img class="w-full" src="https://glab.vn/storage/products/2024/06/21/480x320/6675001eefcfc.jpg" alt="" />
+      <div class="mt-2 text-center">
+        <p class="text-sm font-semibold">VINTAGE 90S SALEM SPORT<br>
+WEAR NBA COMIC</p>
+        <p class="p-1">3,850,000đ</p>
+      </div>
     </div>
+    <div class="flex w-1/4 flex-col items-center">
+      <img class="w-full" src="https://glab.vn/storage/products/2024/06/21/480x320/6674ff2a897cb.jpg" alt="" />
+      <div class="mt-2 text-center">
+        <p class="text-sm font-semibold">Vintage 90s Batman and <br>Robin</p>
+        <p class="p-1">3,300,000đ</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="flex w-1/4 flex-col items-center">
+      <img class="w-full" src="https://glab.vn/storage/products/2024/06/21/480x320/6675013f52ae2.jpg" alt="" />
+      <div class="mt-2 text-center">
+        <p class="text-sm font-semibold">Vintage 90s Looney Tunes <br>Wile E. Coyote</p>
+        <p class="p-1">2,860,000đ</p>
+      </div>
+    </div>
+    <div class="flex w-1/4 flex-col items-center">
+      <img class="w-full" src="https://glab.vn/storage/products/2024/06/21/480x320/6674ff65dc8b8.jpg" alt="" />
+      <div class="mt-2 text-center">
+        <p class="text-sm font-semibold">Vintage Samurai Deeper Kyo </p>
+        <p class="p-1">1,650,000đ</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center justify-center  ">
+    <button class="w-[150px] rounded-md px-4 py-2 border border-black text-black hover:bg-gray-300 hover:border-gray-300 transition-colors duration-300">
+        Xem thêm
+    </button>
+</div >
 </div>
 
+
 <script>
-    let currentIndex = 0;
-    const images = [document.getElementById('image1'), document.getElementById('image2'), document.getElementById('image3')];
-    const titles = [document.getElementById('title1'), document.getElementById('title2')];
-    let intervalId;
+  let currentIndex = 0;
+  const images = [document.getElementById('image1'), document.getElementById('image2'), document.getElementById('image3')];
+  const titles = [document.getElementById('title1'), document.getElementById('title2')];
+  let intervalId;
 
-    function showImage(index) {
-        images[currentIndex].classList.add('hidden');
-        titles[currentIndex % titles.length].classList.add('opacity-0');
-        titles[currentIndex % titles.length].classList.add('hidden');
+  function showImage(index) {
+      images[currentIndex].classList.add('hidden');
+      titles[currentIndex % titles.length].classList.add('opacity-0');
+      titles[currentIndex % titles.length].classList.add('hidden');
 
-        currentIndex = index;
+      currentIndex = index;
 
-        images[currentIndex].classList.remove('hidden');
-        titles[currentIndex % titles.length].classList.remove('opacity-0');
-        titles[currentIndex % titles.length].classList.remove('hidden');
-    }
+      images[currentIndex].classList.remove('hidden');
+      titles[currentIndex % titles.length].classList.remove('opacity-0');
+      titles[currentIndex % titles.length].classList.remove('hidden');
+  }
 
-    function showNextImage() {
-        const nextIndex = (currentIndex + 1) % images.length;
-        showImage(nextIndex);
-    }
+  function showNextImage() {
+      const nextIndex = (currentIndex + 1) % images.length;
+      showImage(nextIndex);
+  }
 
-    function showPrevImage() {
-        const prevIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(prevIndex);
-    }
+  function showPrevImage() {
+      const prevIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(prevIndex);
+  }
 
-    function startSlideshow() {
-        intervalId = setInterval(showNextImage, 3000); // Change every 3 seconds
-    }
+  function startSlideshow() {
+      intervalId = setInterval(showNextImage, 3000); // Change every 3 seconds
+  }
 
-    function stopSlideshow() {
-        clearInterval(intervalId);
-    }
+  function stopSlideshow() {
+      clearInterval(intervalId);
+  }
 
-    document.getElementById('nextBtn').addEventListener('click', () => {
-        stopSlideshow();
-        showNextImage();
-        startSlideshow();
-    });
+  document.getElementById('nextBtn').addEventListener('click', () => {
+      stopSlideshow();
+      showNextImage();
+      startSlideshow();
+  });
 
-    document.getElementById('prevBtn').addEventListener('click', () => {
-        stopSlideshow();
-        showPrevImage();
-        startSlideshow();
-    });
+  document.getElementById('prevBtn').addEventListener('click', () => {
+      stopSlideshow();
+      showPrevImage();
+      startSlideshow();
+  });
 
-    startSlideshow();
+  startSlideshow();
 
-    // Header menu toggle functionality
-    const menuToggle1 = document.getElementById('menu-toggle-1');
-    const mobileMenu1 = document.getElementById('mobile-menu-1');
+  // Header menu toggle functionality
+  const menuToggle1 = document.getElementById('menu-toggle-1');
+  const mobileMenu1 = document.getElementById('mobile-menu-1');
 
-    menuToggle1.addEventListener('click', () => {
-        mobileMenu1.classList.toggle('hidden');
-    });
-
+  menuToggle1.addEventListener('click', () => {
+      mobileMenu1.classList.toggle('hidden');
+  });
 </script>
