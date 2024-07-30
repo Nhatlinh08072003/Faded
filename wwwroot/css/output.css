@@ -554,11 +554,11 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
+/* .container {
   width: 100%;
-}
+} */
 
-@media (min-width: 350px) {
+/* @media (min-width: 350px) {
   .container {
     max-width: 350px;
   }
@@ -592,7 +592,7 @@ video {
   .container {
     max-width: 1536px;
   }
-}
+} */
 
 .sr-only {
   position: absolute;
@@ -3529,7 +3529,7 @@ video {
   box-sizing: border-box;
 }
 
-@media (min-width: 350px) {
+/* @media (min-width: 350px) {
   .sm\:container {
     width: 100%;
   }
@@ -3569,7 +3569,7 @@ video {
       max-width: 1536px;
     }
   }
-}
+} */
 
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
