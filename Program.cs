@@ -20,14 +20,14 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapControllerRoute(
-    name: "Vintageteeshop",
-    pattern: "/vintageteeshop",
-    defaults: new { controller = "Home", action = "Vintageteeshop" }
+    name: "Vintage",
+    pattern: "/vintage",
+    defaults: new { controller = "Home", action = "Vintage" }
 );
 app.MapControllerRoute(
-    name: "Reword",
-    pattern: "/reword",
-    defaults: new { controller = "Home", action = "Reword" }
+    name: "Product",
+    pattern: "/product",
+    defaults: new { controller = "Home", action = "Product" }
 );
 app.MapControllerRoute(
     name: "Information",
@@ -35,13 +35,33 @@ app.MapControllerRoute(
     defaults: new { controller = "Home", action = "Information" }
 );
 app.MapControllerRoute(
-    name: "Contact",
-    pattern: "/contact",
-    defaults: new { controller = "Home", action = "Contact" }
+    name: "Sale",
+    pattern: "/sale",
+    defaults: new { controller = "Home", action = "Sale" }
 );
 app.MapControllerRoute(
     name: "Cart",
     pattern: "/cart",
     defaults: new { controller = "Home", action = "Cart" }
+);
+app.MapControllerRoute(
+    name: "Jersey",
+    pattern: "/jersey",
+    defaults: new { controller = "Home", action = "Jersey" }
+);
+app.MapControllerRoute(
+    name: "Footwear",
+    pattern: "/footwear",
+    defaults: new { controller = "Home", action = "Footwear" }
+);
+app.MapControllerRoute(
+    name: "Login",
+    pattern: "/login",
+    defaults: new { controller = "Account", action = "Login" }
+);
+app.MapControllerRoute(
+    name: "Register",
+    pattern: "/register",
+    defaults: new { controller = "Account", action = "Register" }
 );
 app.Run();

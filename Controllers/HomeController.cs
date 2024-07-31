@@ -13,15 +13,15 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Product()
     {
         return View();
     }
-    public IActionResult Vintageteeshop()
+    public IActionResult Vintage()
     {
         return View();
     }
-    public IActionResult Reword()
+    public IActionResult Sale()
     {
         return View();
     }
@@ -29,11 +29,19 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Contact()
+    public IActionResult Jersey()
     {
         return View();
     }
     public IActionResult Cart()
+    {
+        return View();
+    }
+    public IActionResult Footwear()
+    {
+        return View();
+    }
+     public IActionResult Index()
     {
         return View();
     }
