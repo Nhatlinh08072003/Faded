@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+    <style>
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .dropdown:hover .dropdown-menu,
+      .dropdown:focus-within .dropdown-menu {
+        display: block;
+
+      }
+    </style>
   </head>
 
   <body>
@@ -21,10 +36,57 @@
         </div>
         <div class="hidden flex-1 items-center justify-end space-x-10 lg:flex">
           <nav class="flex space-x-10">
-            <a href="/vintageteeshop" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">PRODUCTS</a>
-            <a href="/reword" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">BRANDS</a>
+            <div class="dropdown relative">
+              <a href="/vintageteeshop" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">PRODUCTS</a>
+              <div class="dropdown-menu p-4">
+                <div class="flex justify-center">
+                  <table class="mx-auto my-auto w-full table-auto bg-gray-200">
+                    <tbody>
+                      <tr>
+                        <td class="p-8">T-Shirt</td>
+                        <td class="p-8">Jacket</td>
+                        <td class="p-8">Shirt</td>
+                        <td class="p-8">Denim</td>
+                        <td class="p-8">Sweater</td>
+                      </tr>
+                      <tr>
+                        <td class="p-8">Pants</td>
+                        <td class="p-8">Accessories</td>
+                        <td class="p-8">Hoodie</td>
+                        <td class="p-8">Flannel</td>
+                        <td class="p-8">Polo</td>
+                      </tr>
+                      <tr>
+                        <td class="p-8">Hats</td>
+                        <td class="p-8">Rework</td>
+                        <td class="p-8">Orders</td>
+                        <td class="p-8">Shorts</td>
+                        <td class="p-8">Bags</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
             <a href="/information" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">CLEARANCE SALE</a>
-            <a href="/contact" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">VINTAGE</a>
+
+            <div class="dropdown group relative">
+              <a href="/vintageteeshop" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">VINTAGE</a>
+              <div class="dropdown-menu absolute hidden w-80 -translate-x-1/2 transform p-5 shadow-lg group-hover:block">
+                <table class="mx-auto w-full table-auto bg-gray-200">
+                  <tbody>
+                    <tr class="flex flex-col">
+                      <td class="p-7 text-center text-lg">Retro</td>
+                      <td class="p-7 text-center text-lg">Vintage 00’s</td>
+                      <td class="p-7 text-center text-lg">Vintage 90’s</td>
+                      <td class="p-7 text-center text-lg">Vintage 80’s</td>
+                      <td class="p-7 text-center text-lg">Vintage 70’s</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             <a href="/cart" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">JERSEYZONE</a>
             <a href="/cart" class="text-lg text-black" style="font-family: 'jsMath-cmbx10';">FOOTWEAR</a>
           </nav>
@@ -48,27 +110,24 @@
           </nav>
         </div>
       </div>
-    <div id="mobile-menu" class="hidden bg-white lg:hidden">
-    <div class="flex flex-col items-center py-4 space-y-4">
-        <form action="/search" method="get" class="flex items-center space-x-2 w-full max-w-md mx-auto">
-            <input type="text" name="query" placeholder="Search..."
-                   class="flex-1 p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-black">
-            <button type="submit" class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
-                Search
-            </button>
-        </form>
-        <nav class="flex flex-col items-center space-y-2">
-            <a href="#" class="text-lg text-black w-screen bg-gray-300 px-4 py-2 rounded-lg font-semibold hover:bg-gray-500" style="font-family: 'jsMath-cmbx10';">LOGIN</a>
-            <a href="#" class="text-lg text-black w-screen bg-gray-300 px-4 py-2 rounded-lg font-semibold hover:bg-gray-500" style="font-family: 'jsMath-cmbx10';">CART</a>
-            <a href="/vintageteeshop" class="text-lg text-black w-screen px-4 py-2 rounded-lg font-semibold " style="font-family: 'jsMath-cmbx10';">PRODUCTS</a>
-            <a href="/reword" class="text-lg text-black w-screen px-4 py-2 rounded-lg font-semibold " style="font-family: 'jsMath-cmbx10';">BRANDS</a>
-            <a href="/information" class="text-lg text-black w-screen px-4 py-2 rounded-lg font-semibold " style="font-family: 'jsMath-cmbx10';">CLEARANCE SALE</a>
-            <a href="/contact" class="text-lg text-black w-screen px-4 py-2 rounded-lg font-semibold " style="font-family: 'jsMath-cmbx10';">VINTAGE</a>
-            <a href="/cart" class="text-lg text-black w-screen px-4 py-2 rounded-lg font-semibold " style="font-family: 'jsMath-cmbx10';">JERSEYZONE</a>
-            <a href="/cart" class="text-lg text-black w-screen px-4 py-2 rounded-lg font-semibold " style="font-family: 'jsMath-cmbx10';">FOOTWEAR</a>
-        </nav>
-    </div>
-</div>
+      <div id="mobile-menu" class="hidden bg-white lg:hidden">
+        <div class="flex flex-col items-center space-y-4 py-4">
+          <form action="/search" method="get" class="mx-auto flex w-full max-w-md items-center space-x-2">
+            <input type="text" name="query" placeholder="Search..." class="flex-1 rounded-lg border border-gray-300 p-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-black" />
+            <button type="submit" class="rounded-lg bg-black px-4 py-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-black">Search</button>
+          </form>
+          <nav class="flex flex-col items-center space-y-2">
+            <a href="#" class="w-screen rounded-lg bg-gray-300 px-4 py-2 text-lg font-semibold text-black hover:bg-gray-500" style="font-family: 'jsMath-cmbx10';">LOGIN</a>
+            <a href="#" class="w-screen rounded-lg bg-gray-300 px-4 py-2 text-lg font-semibold text-black hover:bg-gray-500" style="font-family: 'jsMath-cmbx10';">CART</a>
+            <a href="/vintageteeshop" class="w-screen rounded-lg px-4 py-2 text-lg font-semibold text-black" style="font-family: 'jsMath-cmbx10';">PRODUCTS</a>
+            <a href="/reword" class="w-screen rounded-lg px-4 py-2 text-lg font-semibold text-black" style="font-family: 'jsMath-cmbx10';">BRANDS</a>
+            <a href="/information" class="w-screen rounded-lg px-4 py-2 text-lg font-semibold text-black" style="font-family: 'jsMath-cmbx10';">CLEARANCE SALE</a>
+            <a href="/contact" class="w-screen rounded-lg px-4 py-2 text-lg font-semibold text-black" style="font-family: 'jsMath-cmbx10';">VINTAGE</a>
+            <a href="/cart" class="w-screen rounded-lg px-4 py-2 text-lg font-semibold text-black" style="font-family: 'jsMath-cmbx10';">JERSEYZONE</a>
+            <a href="/cart" class="w-screen rounded-lg px-4 py-2 text-lg font-semibold text-black" style="font-family: 'jsMath-cmbx10';">FOOTWEAR</a>
+          </nav>
+        </div>
+      </div>
     </header>
     <script>
       const menuToggle = document.getElementById('menu-toggle');
