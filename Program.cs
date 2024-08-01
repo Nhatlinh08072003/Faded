@@ -64,4 +64,14 @@ app.MapControllerRoute(
     pattern: "/register",
     defaults: new { controller = "Account", action = "Register" }
 );
-app.Run();
+app.MapControllerRoute(
+    name: "ForgotPassword",
+    pattern: "/forgotpassword",
+    defaults: new { controller = "Account", action = "ForgotPassword" }
+);
+app.MapControllerRoute(
+    name: "Products",
+    pattern: "/products",
+    defaults: new { controller = "Product", action = "Products" }
+);
+app.Run();  
