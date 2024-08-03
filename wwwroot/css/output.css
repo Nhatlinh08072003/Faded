@@ -3777,3 +3777,6 @@ video {
       }
    }
 }
+.instagram-icon {
+   filter: invert(100%);
+}
