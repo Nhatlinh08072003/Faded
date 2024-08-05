@@ -70,8 +70,13 @@ app.MapControllerRoute(
     defaults: new { controller = "Account", action = "ForgotPassword" }
 );
 app.MapControllerRoute(
-    name: "Products",
+    name: "Product",
     pattern: "/products",
-    defaults: new { controller = "Product", action = "Products" }
+    defaults: new { controller = "Product", action = "Product" }
+);
+app.MapControllerRoute(
+    name: "Detail",
+    pattern: "/detail",
+    defaults: new { controller = "Product", action = "Detail" }
 );
 app.Run();  
