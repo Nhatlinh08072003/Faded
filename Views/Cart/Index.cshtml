@@ -1,0 +1,62 @@
+<div class="container mx-auto">
+  <header class="bg-gray-100 p-4">
+    <nav class="flex space-x-4">
+      <a href="#" class="text-blue-500 hover:underline">HOME</a>
+      <a href="#" class="text-blue-500 hover:underline">Thanh Toán</a>
+    </nav>
+  </header>
+  <main class="p-4">
+    <div class="flex">
+      <div class="w-1/2 pr-4">
+        <h2 class="mb-4 text-xl font-bold">Thông tin giao hàng</h2>
+        <form>
+          <div class="mb-4 rounded-md border border-gray-300 p-4 shadow-sm">
+            <label for="name" class="block text-sm font-medium text-gray-700">Họ và tên</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" placeholder="Nhập họ và tên" required />
+          </div>
+
+          <div class="mb-4 rounded-md border border-gray-300 p-4 shadow-sm">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" placeholder="Nhập địa chỉ email" required />
+          </div>
+
+          <div class="mb-4 rounded-md border border-gray-300 p-4 shadow-sm">
+            <label for="phone" class="block text-sm font-medium text-gray-700">Số điện thoại</label>
+            <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" placeholder="Nhập số điện thoại" required />
+          </div>
+
+          <div class="mb-4 rounded-md border border-gray-300 p-4 shadow-sm">
+            <label for="address" class="block text-sm font-medium text-gray-700">Địa chỉ giao hàng</label>
+            <input type="text" id="address" name="address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" placeholder="Nhập địa chỉ giao hàng" required />
+          </div>
+
+          <div class="mb-4 rounded-md border border-gray-300 p-4 shadow-sm">
+            <label for="notes" class="block text-sm font-medium text-gray-700">Ghi chú (nếu có)</label>
+            <textarea id="notes" name="notes" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" placeholder="Nhập ghi chú"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- Đường dọc chia tách -->
+      <div class="mx-4 w-px bg-gray-300"></div>
+
+      <div class="w-1/2 pl-4">
+        <h2 class="mb-4 text-xl font-bold">Sản phẩm</h2>
+        <div class="flex">
+          <img src="https://glab.vn/storage/products/2024/07/18/480x320/6698d1d081895.jpg" alt="Sản phẩm" class="h-24 w-24" />
+          <div class="ml-4">
+            <h3 class="text-lg">VINTAGE NIKE MANCHESTER UNITED 2004-05 AWAY 2 KIT NAMESET RONALDO</h3>
+            <p>Size: XL - Quantity: 1</p>
+            <p>Tạm tính: 3,850,000₫</p>
+            <p>Phí vận chuyển: 30,000₫</p>
+            <h2 class="text-xl font-bold">Tổng cộng: 3,880,000₫</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 p-4 text-center">
+    <button class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">Hoàn tất đơn hàng</button>
+  </footer>
+</div>

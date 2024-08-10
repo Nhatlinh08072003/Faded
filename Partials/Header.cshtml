@@ -4,29 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
-    <style>
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-      }
-      .dropdown:hover .dropdown-menu,
-      .dropdown:focus-within .dropdown-menu {
-        display: block;
-      }
-    </style>
   </head>
 
   <body>
-    <header class="relative  p-6" style="background-color: #E8E8E8;">
-      <a href="/">
+    <header class="relative p-6 bg-gray-200">
       <div class="flex items-center justify-between">
-        <div class="flex-shrink-0">
-          <img src="https://i.pinimg.com/564x/c3/7c/88/c37c889868ad99b24850dfed668f3f1e.jpg" alt="Faded Logo" class="w-1/5  ">
-        </div>
+        <a href="/">
+          <img src="https://i.pinimg.com/564x/c3/7c/88/c37c889868ad99b24850dfed668f3f1e.jpg" alt="Faded Logo" class="w-1/5">
         </a>
         <div class="flex lg:hidden">
           <button id="menu-toggle" class="text-black focus:outline-none">
@@ -37,44 +21,41 @@
         </div>
         <div class="hidden flex-1 items-center justify-end space-x-10 lg:flex">
           <nav class="flex space-x-10">
-            <div class="dropdown relative">
+            <div class="relative group">
               <a href="/product" class="text-lg text-black transition hover:text-gray-400" style="font-family: 'jsMath-cmbx10';">PRODUCTS</a>
-              <div class="dropdown-menu p-4">
-                <div class="flex justify-center">
-                  <table class="mx-auto my-auto w-full table-auto bg-gray-400">
-                    <tbody>
-                      <tr>
-                        <td class="p-8 hover:bg-gray-300">T-Shirt</td>
-                        <td class="p-8 hover:bg-gray-300">Jacket</td>
-                        <td class="p-8 hover:bg-gray-300">Shirt</td>
-                        <td class="p-8 hover:bg-gray-300">Denim</td>
-                        <td class="p-8 hover:bg-gray-300">Sweater</td>
-                      </tr>
-                      <tr>
-                        <td class="p-8 hover:bg-gray-300">Pants</td>
-                        <td class="p-8 hover:bg-gray-300">Accessories</td>
-                        <td class="p-8 hover:bg-gray-300">Hoodie</td>
-                        <td class="p-8 hover:bg-gray-300">Flannel</td>
-                        <td class="p-8 hover:bg-gray-300">Polo</td>
-                      </tr>
-                      <tr>
-                        <td class="p-8 hover:bg-gray-300">Hats</td>
-                        <td class="p-8 hover:bg-gray-300">Rework</td>
-                        <td class="p-8 hover:bg-gray-300">Orders</td>
-                        <td class="p-8 hover:bg-gray-300">Shorts</td>
-                        <td class="p-8 hover:bg-gray-300">Bags</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="absolute hidden bg-gray-400 group-hover:block p-4">
+                <table class="mx-auto my-auto w-full table-auto">
+                  <tbody>
+                    <tr>
+                      <td class="p-8 hover:bg-gray-300">T-Shirt</td>
+                      <td class="p-8 hover:bg-gray-300">Jacket</td>
+                      <td class="p-8 hover:bg-gray-300">Shirt</td>
+                      <td class="p-8 hover:bg-gray-300">Denim</td>
+                      <td class="p-8 hover:bg-gray-300">Sweater</td>
+                    </tr>
+                    <tr>
+                      <td class="p-8 hover:bg-gray-300">Pants</td>
+                      <td class="p-8 hover:bg-gray-300">Accessories</td>
+                      <td class="p-8 hover:bg-gray-300">Hoodie</td>
+                      <td class="p-8 hover:bg-gray-300">Flannel</td>
+                      <td class="p-8 hover:bg-gray-300">Polo</td>
+                    </tr>
+                    <tr>
+                      <td class="p-8 hover:bg-gray-300">Hats</td>
+                      <td class="p-8 hover:bg-gray-300">Rework</td>
+                      <td class="p-8 hover:bg-gray-300">Orders</td>
+                      <td class="p-8 hover:bg-gray-300">Shorts</td>
+                      <td class="p-8 hover:bg-gray-300">Bags</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             <a href="/information" class="text-lg text-black transition hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">CLEARANCE SALE</a>
-
-            <div class="dropdown group relative">
-              <a href="/vintageteeshop" class="text-lg text-black transition  hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">VINTAGE</a>
-              <div class="dropdown-menu absolute hidden w-80 -translate-x-1/2 transform p-5  group-hover:block">
-                <table class="mx-auto w-full table-auto bg-gray-400">
+            <div class="relative group">
+              <a href="/vintageteeshop" class="text-lg text-black transition hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">VINTAGE</a>
+              <div class="absolute hidden bg-gray-400 group-hover:block p-5">
+                <table class="mx-auto w-full table-auto">
                   <tbody>
                     <tr class="flex flex-col">
                       <td class="p-7 text-center text-lg hover:bg-gray-300">Retro</td>
@@ -87,9 +68,8 @@
                 </table>
               </div>
             </div>
-
-            <a href="/cart" class="text-lg text-black transition  hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">JERSEYZONE</a>
-            <a href="/cart" class="text-lg text-black transition  hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">FOOTWEAR</a>
+            <a href="/cart" class="text-lg text-black transition hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">JERSEYZONE</a>
+            <a href="/cart" class="text-lg text-black transition hover:text-gray-500" style="font-family: 'jsMath-cmbx10';">FOOTWEAR</a>
           </nav>
           <nav class="hidden space-x-4 lg:flex">
             <a href="/login" class="text-black transition hover:bg-gray-800 hover:text-white">
@@ -103,10 +83,13 @@
                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z" clip-rule="evenodd" />
               </svg>
             </a>
-            <a href="#" class="text-black transition hover:bg-gray-800 hover:text-white">
+            <a href="/cart" id="cart-toggle" class="relative text-black transition hover:bg-gray-800 hover:text-white">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
                 <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
               </svg>
+              <div id="cart-details" class="absolute right-0 z-10 hidden mt-2 w-48 rounded-lg bg-white shadow-lg">
+                <p class="p-4 text-center">Your cart is empty</p>
+              </div>
             </a>
           </nav>
         </div>
@@ -133,9 +116,22 @@
     <script>
       const menuToggle = document.getElementById('menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
+      const cartToggle = document.getElementById('cart-toggle');
+      const cartDetails = document.getElementById('cart-details');
 
       menuToggle.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
+      });
+
+      cartToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          cartDetails.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+          if (!cartDetails.classList.contains('hidden') && !cartToggle.contains(e.target)) {
+              cartDetails.classList.add('hidden');
+          }
       });
     </script>
   </body>
